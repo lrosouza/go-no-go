@@ -74,9 +74,9 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1 className="hero-title">Beer Brand Checker 🍺</h1>
+        <h1 className="hero-title">Go or No-Go? 🍺</h1>
         <p className="hero-subtitle">
-          Find out instantly if your favorite beer belongs to a major brewing
+          Find out instantly if a beer belongs our
           company. Because who makes your beer matters.
         </p>
       </motion.div>
@@ -85,7 +85,7 @@ export default function App() {
         <CardContent>
           <div className="input-row">
             <Input
-              placeholder="Type a beer brand (e.g., Corona, Heineken...)"
+              placeholder="Type a beer brand (e.g., Corona, Modelo...)"
               value={brand}
               onChange={(event) => setBrand(event.target.value)}
               onKeyDown={handleKeyDown}
@@ -120,7 +120,7 @@ export default function App() {
       </Card>
 
       <p className="footer-note">
-        Crafted with ❤️ for beer lovers who care where their brew comes from.
+        Crafted for beer lovers who care where their brew comes from.
       </p>
     </div>
   );
