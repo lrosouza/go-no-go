@@ -18,14 +18,14 @@ const OWNED_BRANDS = [
 
 const RESULT_MESSAGES = {
   owned: {
-    title: "This brand belongs to a major company.",
-    description: "Time to learn who’s behind the label!",
+    title: "This brand belongs to our company.",
+    description: "Go for it!🍻",
     icon: CheckCircle2,
     className: "result-owned",
   },
   not_owned: {
-    title: "This brand is independent — or not in our database.",
-    description: "Enjoy supporting the little guys 🍻",
+    title: "This brand does not belong to our company.",
+    description: "Follow the 3 steps:\n1) Order tap water;\n2) Call the manager;\n3) Sell our beer.",
     icon: XCircle,
     className: "result-independent",
   },
@@ -76,8 +76,8 @@ export default function App() {
       >
         <h1 className="hero-title">Go or No-Go? 🍺</h1>
         <p className="hero-subtitle">
-          Find out instantly if a beer belongs our
-          company. Because who makes your beer matters.
+          Find out instantly if a beer belongs to our
+          company.
         </p>
       </motion.div>
 
@@ -85,7 +85,7 @@ export default function App() {
         <CardContent>
           <div className="input-row">
             <Input
-              placeholder="Type a beer brand (e.g., Corona, Modelo...)"
+              placeholder="Type a beer brand (e.g., Corona...)"
               value={brand}
               onChange={(event) => setBrand(event.target.value)}
               onKeyDown={handleKeyDown}
