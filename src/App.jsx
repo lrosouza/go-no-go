@@ -18,14 +18,14 @@ const OWNED_BRANDS = [
 
 const RESULT_MESSAGES = {
   owned: {
-    title: "This brand belongs to our company.",
+    title: "Cheers!.",
     description: "Go for it!🍻",
     icon: CheckCircle2,
     className: "result-owned",
   },
   not_owned: {
-    title: "This brand does not belong to our company.",
-    description: "Follow the 3 steps:\n1) Order tap water;\n2) Call the manager;\n3) Sell our beer.",
+    title: "Tears!",
+    description: "Gor for a water (tap), though.",
     icon: XCircle,
     className: "result-independent",
   },
@@ -74,7 +74,7 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1 className="hero-title">Go or No-Go? 🍺</h1>
+        <h1 className="hero-title">Cheers or Tears? 🍺</h1>
         <p className="hero-subtitle">
           Find out instantly if a beer belongs to our
           company.
@@ -120,7 +120,7 @@ export default function App() {
       </Card>
 
       <p className="footer-note">
-        Crafted for beer lovers who care where their brew comes from.
+        Crafted for beer lovers who care where their brew, and earnings, comes from.
       </p>
     </div>
   );
