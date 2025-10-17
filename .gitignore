@@ -1,10 +1,5 @@
-node_modules
-.DS_Store
-.dist
-.env
-.vscode
-.idea
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Git ignore for Vite + React
+git rm -r --cached .
+git add .
+git commit -m "Apply .gitignore and clean tracked files"
+git push origin main
